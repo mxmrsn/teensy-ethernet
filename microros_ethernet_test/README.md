@@ -5,6 +5,7 @@
 [![microROS Serial](https://img.shields.io/badge/microROS_Serial-30363d?style=for-the-badge)](../microros_serial_test/README.md)
 [![Ethernet UDP](https://img.shields.io/badge/Ethernet_UDP-1f6feb?style=for-the-badge)](README.md)
 [![QoS Results](https://img.shields.io/badge/QoS_Results-30363d?style=for-the-badge)](QOS_COMPARISON.md)
+[![Load Test](https://img.shields.io/badge/Load_Test-30363d?style=for-the-badge)](LOAD_TEST.md)
 
 A Teensy 4.1 micro-ROS node tuned for **>500 Hz** publishing to ROS2 (Jazzy) over
 UDP. Custom transport on **QNEthernet** (lwIP), **best-effort** QoS, and a lean

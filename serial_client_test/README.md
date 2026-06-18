@@ -5,6 +5,7 @@
 [![microROS Serial](https://img.shields.io/badge/microROS_Serial-30363d?style=for-the-badge)](../microros_serial_test/README.md)
 [![Ethernet UDP](https://img.shields.io/badge/Ethernet_UDP-30363d?style=for-the-badge)](../microros_ethernet_test/README.md)
 [![QoS Results](https://img.shields.io/badge/QoS_Results-30363d?style=for-the-badge)](../microros_ethernet_test/QOS_COMPARISON.md)
+[![Load Test](https://img.shields.io/badge/Load_Test-30363d?style=for-the-badge)](../microros_ethernet_test/LOAD_TEST.md)
 
 A dependency-free comms baseline for the Teensy 4.1 peripheral. Same data
 directions as the micro-ROS node in [`../bcc_board_reference_ros2`](../bcc_board_reference_ros2),

@@ -5,6 +5,7 @@
 [![microROS Serial](https://img.shields.io/badge/microROS_Serial-30363d?style=for-the-badge)](../microros_serial_test/README.md)
 [![Ethernet UDP](https://img.shields.io/badge/Ethernet_UDP-30363d?style=for-the-badge)](README.md)
 [![QoS Results](https://img.shields.io/badge/QoS_Results-1f6feb?style=for-the-badge)](QOS_COMPARISON.md)
+[![Load Test](https://img.shields.io/badge/Load_Test-30363d?style=for-the-badge)](LOAD_TEST.md)
 
 Measured on the direct Gigabit link, `geometry_msgs/Point32` (12 B) payload,
 5 s windows, drop detection via the monotonic sequence in `.z`. One firmware,
