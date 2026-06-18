@@ -1,0 +1,29 @@
+# PlatformIO build output
+.pio/
+
+# ROS2 / colcon workspace build artifacts
+build/
+install/
+log/
+
+# micro-ROS firmware staging (generated into the WSL build dir by wsl/build.sh)
+extra_packages/
+
+# Firmware binaries
+*.hex
+*.elf
+*.bin
+*.map
+
+# Build logs
+build.log
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# OS / OneDrive cruft
+Thumbs.db
+desktop.ini
+*~
+*.swp

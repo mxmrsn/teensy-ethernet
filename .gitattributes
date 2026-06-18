@@ -1,0 +1,12 @@
+# Keep LF endings everywhere so shell scripts work in WSL/Linux after checkout
+# (avoids CRLF breaking wsl/*.sh, build.sh, etc.).
+* text=auto eol=lf
+
+# Windows-native scripts keep CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Treat firmware binaries as binary (also gitignored, but just in case)
+*.hex binary
+*.elf binary
+*.bin binary
