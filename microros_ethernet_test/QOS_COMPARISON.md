@@ -1,5 +1,11 @@
 # QoS performance: best-effort vs reliable (Teensy 4.1 micro-ROS over UDP)
 
+[![Overview](https://img.shields.io/badge/Overview-30363d?style=for-the-badge)](../README.md)
+[![Serial Baseline](https://img.shields.io/badge/Serial_Baseline-30363d?style=for-the-badge)](../serial_client_test/README.md)
+[![microROS Serial](https://img.shields.io/badge/microROS_Serial-30363d?style=for-the-badge)](../microros_serial_test/README.md)
+[![Ethernet UDP](https://img.shields.io/badge/Ethernet_UDP-30363d?style=for-the-badge)](README.md)
+[![QoS Results](https://img.shields.io/badge/QoS_Results-1f6feb?style=for-the-badge)](QOS_COMPARISON.md)
+
 Measured on the direct Gigabit link, `geometry_msgs/Point32` (12 B) payload,
 5 s windows, drop detection via the monotonic sequence in `.z`. One firmware,
 two publishers, `teensy/set_mode` to isolate each QoS (no cross-load):

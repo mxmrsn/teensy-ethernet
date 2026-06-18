@@ -1,5 +1,11 @@
 # microros_serial_test — minimal micro-ROS node over serial (via WSL)
 
+[![Overview](https://img.shields.io/badge/Overview-30363d?style=for-the-badge)](../README.md)
+[![Serial Baseline](https://img.shields.io/badge/Serial_Baseline-30363d?style=for-the-badge)](../serial_client_test/README.md)
+[![microROS Serial](https://img.shields.io/badge/microROS_Serial-1f6feb?style=for-the-badge)](README.md)
+[![Ethernet UDP](https://img.shields.io/badge/Ethernet_UDP-30363d?style=for-the-badge)](../microros_ethernet_test/README.md)
+[![QoS Results](https://img.shields.io/badge/QoS_Results-30363d?style=for-the-badge)](../microros_ethernet_test/QOS_COMPARISON.md)
+
 A dependency-free micro-ROS node for the Teensy 4.1 that validates the full
 **Teensy ↔ micro_ros_agent ↔ ROS2 (Jazzy)** path over USB serial. Counter
 publisher + command subscriber, with a proper **reconnection state machine** so

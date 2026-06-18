@@ -1,5 +1,11 @@
 # teensy-ethernet — Teensy 4.1 micro-ROS peripheral (serial → Ethernet/UDP)
 
+[![Overview](https://img.shields.io/badge/Overview-1f6feb?style=for-the-badge)](README.md)
+[![Serial Baseline](https://img.shields.io/badge/Serial_Baseline-30363d?style=for-the-badge)](serial_client_test/README.md)
+[![microROS Serial](https://img.shields.io/badge/microROS_Serial-30363d?style=for-the-badge)](microros_serial_test/README.md)
+[![Ethernet UDP](https://img.shields.io/badge/Ethernet_UDP-30363d?style=for-the-badge)](microros_ethernet_test/README.md)
+[![QoS Results](https://img.shields.io/badge/QoS_Results-30363d?style=for-the-badge)](microros_ethernet_test/QOS_COMPARISON.md)
+
 Prototypes for a high-performance Teensy 4.1 peripheral talking to ROS2 (Jazzy)
 over micro-ROS — built up from a plain-serial baseline to a tuned Ethernet/UDP
 node benchmarked well past the original >500 Hz goal.
@@ -16,11 +22,6 @@ node benchmarked well past the original >500 Hz goal.
 | [`ros2_ws/src/teensy_bench/`](ros2_ws/src/teensy_bench/) | C++ benchmark nodes: `rate_meter`, `rate_meter_full`, `rtt_ping` |
 | [`wsl/`](wsl/) | WSL helper scripts — privileged setup, build, run agent |
 | [`flash_teensy.ps1`](flash_teensy.ps1) | One-elevation Windows flash + usbipd re-attach |
-
-> Subproject READMEs with full build / flash / run / verify steps:
-> [serial_client_test](serial_client_test/README.md) ·
-> [microros_serial_test](microros_serial_test/README.md) ·
-> [microros_ethernet_test](microros_ethernet_test/README.md)
 
 ## Toolchain notes
 
