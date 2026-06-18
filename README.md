@@ -8,14 +8,19 @@ node benchmarked well past the original >500 Hz goal.
 
 | Path | What |
 |------|------|
-| `serial_client_test/` | Standalone serial baseline (**no ROS**) — Arduino sketch + Python host client for latency/throughput sanity checks |
-| `microros_serial_test/` | Minimal micro-ROS node over USB serial, with a reconnecting state machine |
-| `microros_ethernet_test/` | **High-performance micro-ROS over Ethernet/UDP** — QNEthernet custom transport, best-effort + reliable QoS, runtime rate / QoS / payload control |
-| `bcc_board_reference_ros2/` | Reference BCC hardware-interface node (galvo / trigger / clutch) |
-| `ros2_ws/src/teensy_msgs/` | Custom multi-signal message `GalvoState` |
-| `ros2_ws/src/teensy_bench/` | C++ benchmark nodes: `rate_meter`, `rate_meter_full`, `rtt_ping` |
-| `wsl/` | WSL helper scripts — privileged setup, build, run agent |
-| `flash_teensy.ps1` | One-elevation Windows flash + usbipd re-attach |
+| [`serial_client_test/`](serial_client_test/README.md) | Standalone serial baseline (**no ROS**) — Arduino sketch + Python host client for latency/throughput sanity checks |
+| [`microros_serial_test/`](microros_serial_test/README.md) | Minimal micro-ROS node over USB serial, with a reconnecting state machine |
+| [`microros_ethernet_test/`](microros_ethernet_test/README.md) | **High-performance micro-ROS over Ethernet/UDP** — QNEthernet custom transport, best-effort + reliable QoS, runtime rate / QoS / payload control |
+| [`bcc_board_reference_ros2/`](bcc_board_reference_ros2/) | Reference BCC hardware-interface node (galvo / trigger / clutch) |
+| [`ros2_ws/src/teensy_msgs/`](ros2_ws/src/teensy_msgs/) | Custom multi-signal message `GalvoState` |
+| [`ros2_ws/src/teensy_bench/`](ros2_ws/src/teensy_bench/) | C++ benchmark nodes: `rate_meter`, `rate_meter_full`, `rtt_ping` |
+| [`wsl/`](wsl/) | WSL helper scripts — privileged setup, build, run agent |
+| [`flash_teensy.ps1`](flash_teensy.ps1) | One-elevation Windows flash + usbipd re-attach |
+
+> Subproject READMEs with full build / flash / run / verify steps:
+> [serial_client_test](serial_client_test/README.md) ·
+> [microros_serial_test](microros_serial_test/README.md) ·
+> [microros_ethernet_test](microros_ethernet_test/README.md)
 
 ## Toolchain notes
 
@@ -37,5 +42,5 @@ Each subproject has its own README with build / flash / run / verify steps.
 - Bottleneck at the top end is the micro-ROS **agent** (~43k msg/s), not the Teensy.
 - ≥ 40× the original >500 Hz target.
 
-See `microros_ethernet_test/README.md` and `microros_ethernet_test/QOS_COMPARISON.md`
-for the full measurements.
+See [microros_ethernet_test/README.md](microros_ethernet_test/README.md) and
+[QOS_COMPARISON.md](microros_ethernet_test/QOS_COMPARISON.md) for the full measurements.
